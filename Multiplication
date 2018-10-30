@@ -1,0 +1,17 @@
+
+;<MULTIPLICATION>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+MVI A,00H
+MVI B,08H
+MVI C,03H
+loop: ADD B
+DCR C
+JNZ loop
+hlt
