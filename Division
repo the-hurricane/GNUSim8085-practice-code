@@ -1,0 +1,19 @@
+
+;<Division>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+mvi a,33h
+mvi b,11h
+loop: cmp b
+      jc exit
+      sub b
+      inr c
+      jmp loop
+exit: nop
+hlt
