@@ -1,0 +1,20 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+LDA 0001
+CMA
+ADI 01H
+MOV B,A
+LDA 0000
+ADD B
+DAA
+STA 0002
+
+hlt
