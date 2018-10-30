@@ -1,0 +1,18 @@
+
+;<Adding_n_Consecutive>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+MVI C,3h
+MVI B,12h
+MVI A,00h
+loop: ADD B
+     INR B
+     DCR C
+     JNZ loop
+hlt
