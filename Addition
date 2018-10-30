@@ -1,0 +1,14 @@
+
+;<Addition>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+MVI A,028H
+MVI B,076H
+ADD B
+hlt
